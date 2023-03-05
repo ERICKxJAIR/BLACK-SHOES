@@ -1,0 +1,36 @@
+@model Fale_Conosco
+
+@{
+    ViewData["Title"] = "Edição de Atendimento";
+}
+
+<h1>Editar suas Mensagens</h1>
+
+
+<form method="POST" asp-action="Editar">
+    <input type="hidden" asp-for="id">
+    <p>
+    <label>Nome:</label>
+    <input asp-for="Nome" autocomplete="off" required>
+    </p>
+
+    <p>
+    <label>Endereço:</label>
+    <input asp-for="Endereco" autocomplete="off" required>
+    </p>
+
+    <p>
+    <label>E-Mail:</label>
+    <input asp-for="Email" autocomplete="off" required>
+    </p>
+
+    <p>
+    <label>Assunto:</label>
+    <input asp-for="Assunto" autocomplete="off" required>
+    </p>
+
+    
+    <input type="reset" value="Limpar">
+    <input type="submit" value="Salvar">
+    <br>
+</form>

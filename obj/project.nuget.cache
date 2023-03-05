@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "pH2OqOfhMcgEDCoHvXe7wGr5BmzSldWQMzXorzceZLwq6NxpOOvIXl+TcrpRSy3btSLcDNFV9QJGEeoBp1l65A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Erick\\Desktop\\black_shoes\\black_shoes.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Erick\\.nuget\\packages\\mysqlconnector\\2.1.13\\mysqlconnector.2.1.13.nupkg.sha512",
+    "C:\\Users\\Erick\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "C:\\Users\\Erick\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}

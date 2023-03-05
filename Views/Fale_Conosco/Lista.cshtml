@@ -1,0 +1,35 @@
+@model List<Fale_Conosco>
+@{
+    ViewData["Title"] = "Suas Mensagens";
+}
+<h1>@ViewData["Title"]</h1>
+
+<table border="1px">
+    <thead align="center">
+        <tr>
+            <td width="100px"> Nome </td>&nbsp
+            <td width="100px"> Endereço </td>&nbsp
+            <td width="100px"> E-mail </td>&nbsp
+            <td width="100px"> Assunto </td>&nbsp
+        </tr>
+    </thead>
+<tbody align="center">
+     @foreach (Fale_Conosco fale_Conosco in Model)
+{
+    <tr>
+        <td>@fale_Conosco.Nome</td>
+        <td>@fale_Conosco.Endereco</td>    
+        <td>@fale_Conosco.Email</td>              
+        <td>@fale_Conosco.Assunto</td>
+        <td>
+            <a href="/Fale_Conosco/Editar?id=@fale_Conosco.id">Editar</a>
+            <a href="/Fale_Conosco/Editar?id=@fale_Conosco.id">Remover</a>
+        </td>
+    </tr>
+}
+</tbody>
+</table>
+
+<p>
+    <a asp-action="Atendimento">Adicionar outra Reclamação ou Dúvidas??</a>
+</p>

@@ -1,0 +1,34 @@
+@model List<Formulario>
+@{
+    ViewData["Title"] = "Suas Mensagens";
+}
+<h1>@ViewData["Title"]</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th> Nome </th>&nbsp
+            <th> Endereço </th>&nbsp
+            <th> E-mail </th>&nbsp
+            <th> Assunto </th>&nbsp
+        </tr>
+    </thead>
+<tbody>
+     @foreach (Formulario Formulario in Model)
+{
+    <tr>
+        <td>@Formulario.Nome</td>
+
+        <td>@Formulario.Endereco</td>
+        
+        <td>@Formulario.Email</td>
+
+        <td>@Formulario.Assunto</td>
+    </tr>
+}
+</tbody>
+</table>
+
+<p>
+    <a asp-action="Atendimento">Adicionar outra Reclamação ou Dúvidas??</a>
+</p>
